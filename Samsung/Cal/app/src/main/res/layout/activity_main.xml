@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".MainActivity"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:background="@drawable/gradient"
+		>
+	
+	
+	
+	
+	
+	<TextView android:layout_width="match_parent"
+	          android:layout_height="30mm"
+	          android:layout_marginVertical="5mm"
+	          android:id="@+id/answer"
+	          android:background="#FFFFFF"
+	          android:hint="Ответ"
+	          android:textSize="5mm"
+	/>
+	
+	<LinearLayout
+			android:layout_width="50mm"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+	>
+		
+		<EditText android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:layout_weight="1"
+		          android:id="@+id/arg1"
+		          android:inputType="numberDecimal"
+		          android:hint="1"
+		/>
+		
+		<EditText android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:layout_weight="1"
+		          android:id="@+id/arg2"
+		          android:inputType="numberDecimal"
+		          android:hint="1"
+		/>
+		
+	</LinearLayout>
+	
+	<LinearLayout
+			android:layout_width="50mm"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp"
+	>
+	
+		<Button android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+				android:id="@+id/add"
+				android:onClick="AddNumbers"
+		        android:text="+"
+		        android:layout_weight="1"
+		/>
+		
+		<Button android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+				android:id="@+id/subtr"
+				android:onClick="Vichitanie"
+		        android:text="-"
+		        android:layout_weight="1"
+		        
+		/>
+		
+	</LinearLayout>
+	
+	<LinearLayout
+			android:layout_width="50mm"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+	>
+		
+		<Button android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/mul"
+		        android:onClick="Umnogenie"
+		        android:text="*"
+		        android:layout_weight="1"
+		
+		/>
+		
+		<Button android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/devide"
+		        android:onClick="Delenie"
+		        android:text=":"
+		        android:layout_weight="1"
+		/>
+		
+	</LinearLayout>
+	
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	
+	
+</LinearLayout>
